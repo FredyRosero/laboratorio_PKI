@@ -1,13 +1,24 @@
 version: '3.1'
 services:
-    webserver:
+    webserver_a:
         image: apache_php_https
         restart: always
         volumes:
             - ./html:/var/www/html
-            -  ${APACHE_LOG_VOLUME}:/var/log/apache2
-            - ${APACHE_CONF}:/etc/apache2/sites-available/000-default.conf
-            - ${SSL_VOLUME}:/var/imported/ssl
+            - ./apache_log:/var/log/apache2
+            - ./000-default.conf:/etc/apache2/sites-available/000-default.conf
+            - ./ssl_a:/var/imported/ssl
         ports:
-            - "${HOST_HTTP_PORT}:80"
-            - "${HOST_HTTPS_PORT}:443"
+            - "80:80"
+            - "443:443"
+    webserver_b:
+        image: apache_php_https
+        restart: always
+        volumes:
+            - ./html:/var/www/html
+            - ./apache_log:/var/log/apache2
+            - ./000-default.conf:/etc/apache2/sites-available/000-default.conf
+            - ./ssl_b:/var/imported/ssl
+        ports:
+            - "8080:80"
+            - "8443:443"            
