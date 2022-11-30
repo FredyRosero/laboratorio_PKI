@@ -1,0 +1,22 @@
+[req]
+default_bits  = 2048
+distinguished_name = req_distinguished_name
+req_extensions = req_ext
+x509_extensions = v3_req
+prompt = no
+[req_distinguished_name]
+countryName = CO
+stateOrProvinceName = N/A
+localityName = N/A
+organizationName = Organizacion X
+commonName = ec2-18-117-226-79.us-east-2.compute.amazonaws.com
+[req_ext]
+subjectAltName = @alt_names
+[v3_req]
+subjectAltName = @alt_names
+[alt_names]
+IP.1 = 18.117.226.79
+[ v3_ca ]
+subjectKeyIdentifier=hash
+authorityKeyIdentifier=keyid:always,issuer
+basicConstraints = critical,CA:true
