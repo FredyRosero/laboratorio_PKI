@@ -131,3 +131,18 @@ AH00558: apache2: Could not reliably determine the server's fully qualified doma
 [Tue Nov 29 22:38:37.840122 2022] [ssl:warn] [pid 1] AH01909: localhost:443:0 server certificate does NOT include an ID which matches the server name
 [Tue Nov 29 22:38:37.842987 2022] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.52 (Debian) PHP/7.3.33 OpenSSL/1.1.1k configured -- resuming normal operations
 [Tue Nov 29 22:38:37.843022 2022] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Wed Nov 30 04:26:50.436862 2022] [mpm_prefork:notice] [pid 1] AH00170: caught SIGWINCH, shutting down gracefully
+[Wed Nov 30 04:28:03.145366 2022] [ssl:warn] [pid 1] AH01906: localhost:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Wed Nov 30 04:28:03.145372 2022] [ssl:warn] [pid 1] AH01906: localhost:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Wed Nov 30 04:28:03.154245 2022] [ssl:warn] [pid 1] AH01909: localhost:443:0 server certificate does NOT include an ID which matches the server name
+[Wed Nov 30 04:28:03.154244 2022] [ssl:warn] [pid 1] AH01909: localhost:443:0 server certificate does NOT include an ID which matches the server name
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.22.0.2. Set the 'ServerName' directive globally to suppress this message
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.22.0.3. Set the 'ServerName' directive globally to suppress this message
+[Wed Nov 30 04:28:03.319502 2022] [ssl:warn] [pid 1] AH01906: localhost:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Wed Nov 30 04:28:03.319518 2022] [ssl:warn] [pid 1] AH01906: localhost:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Wed Nov 30 04:28:03.319560 2022] [ssl:warn] [pid 1] AH01909: localhost:443:0 server certificate does NOT include an ID which matches the server name
+[Wed Nov 30 04:28:03.319563 2022] [ssl:warn] [pid 1] AH01909: localhost:443:0 server certificate does NOT include an ID which matches the server name
+[Wed Nov 30 04:28:03.354344 2022] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.52 (Debian) PHP/7.3.33 OpenSSL/1.1.1k configured -- resuming normal operations
+[Wed Nov 30 04:28:03.354361 2022] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.52 (Debian) PHP/7.3.33 OpenSSL/1.1.1k configured -- resuming normal operations
+[Wed Nov 30 04:28:03.354405 2022] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Wed Nov 30 04:28:03.354681 2022] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
